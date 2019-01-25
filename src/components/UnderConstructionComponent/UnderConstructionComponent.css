@@ -1,0 +1,17 @@
+.breakpage {
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    position: absolute;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.breakpage h1 {
+    color:white;
+    font-size: 3em;
+    text-transform: lowercase;
+}
