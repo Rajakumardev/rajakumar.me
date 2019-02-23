@@ -17,7 +17,7 @@ class LandingPage extends Component {
                         Had good exprience in tech industry. And also developed couple of projects️️️️ as an indie hacker.</h6>
                     </div>
                 </Cell>
-                <Cell col={4} className="social-links">
+                <Cell col={12} className="social-links">
                     <h3><a href="https://twitter.com/srajakumar95"><i class="fab white fa-twitter"></i></a></h3>
                     <h3><a href="https://www.linkedin.com/in/rajakumardev/"><i class="fab white fa-linkedin-in"></i></a></h3>
                     <h3><a href="https://github.com/Rajakumardev"><i class="fab white fa-github-alt"></i></a></h3>

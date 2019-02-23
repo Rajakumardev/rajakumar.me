@@ -11,8 +11,8 @@
 .landing-grid {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width:100%;
+    justify-content: center
+
 }
 .landing-grid .hero-img-container {
     text-align: center;
@@ -23,10 +23,11 @@
 .social-links {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .social-links h3{
-    flex-basis: 3em;
     text-align: center;
+    flex-basis: 3em;
     transition:transform .2s;
 }
 .social-links h3:hover {
