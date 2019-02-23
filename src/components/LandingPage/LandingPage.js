@@ -13,7 +13,7 @@ class LandingPage extends Component {
                 <Cell col={12} className="desc-container">
                     <div style={{'font-family' :'Helvetica Neue','color':'white','width':'80%','margin':'0 auto'}}>
                         <h3>Hi 🙋‍♂</h3>
-                        <h6>People call me Rajakumar.<code> I_Write_Code 💻.</code> I live in madurai but would love to explore the 🌐 and beyond!.
+                        <h6>People call me Rajakumar.<code> I_Write_Code 💻.</code> I live in madurai but i would love to explore the 🌐 and beyond!.
                         Had good exprience in tech industry. And also developed couple of projects️️️️ as an indie hacker.</h6>
                     </div>
                 </Cell>
