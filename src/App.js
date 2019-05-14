@@ -16,7 +16,7 @@ class App extends Component {
               <Link to = '/' >🏡 Home</Link>
               <Link to = '/' >⏲ Timeline</Link>
               <Link to = '/' >🚀 Projects</Link>
-              <Link to = '/' >📄 Resume</Link>
+              <Link to = '/resume' >📄 Resume</Link>
               <Link to = '/' >📸 ClickZ</Link>
             </Navigation>
           </Drawer>
