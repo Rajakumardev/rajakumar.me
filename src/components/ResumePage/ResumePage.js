@@ -10,8 +10,8 @@ class ResumePage extends Component {
     render() {
         return (
             <Grid class="resumePage-grid">
-                <Cell col={12}>
-                    <Card style={{width:'500px',margin:'50px auto'}}>
+                <Cell col={4} phone={12}  style={{margin:'50px auto'}}>
+                    <Card  style={{width:'100%'}}>
                         <CardTitle shadow={3} style={{color:'#fff',height:'176px',background: 'url('+resumecov+') center / cover'}}>Download Resume</CardTitle>
                         <CardText>
                             Updated Resume (PDF), last updated 15 May 2019.

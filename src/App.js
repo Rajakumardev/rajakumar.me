@@ -13,11 +13,11 @@ class App extends Component {
           <Header title="rajakumar.me" className="header"/>
           <Drawer title = "Menu">
             <Navigation>
-              <Link to = '/' >🏡 Home</Link>
-              <Link to = '/' >⏲ Timeline</Link>
-              <Link to = '/' >🚀 Projects</Link>
-              <Link to = '/resume' >📄 Resume</Link>
-              <Link to = '/' >📸 ClickZ</Link>
+              <Link to = '/' ><span role="img">🏡 </span> Home</Link>
+              <Link to = '/' ><span role="img">⏲ </span>Timeline</Link>
+              <Link to = '/' ><span role="img">🚀 </span>Projects</Link>
+              <Link to = '/resume' ><span role="img">📄 </span>Resume</Link>
+              <Link to = '/' ><span role="img">📸</span> ClickZ</Link>
             </Navigation>
           </Drawer>
           <Content>
