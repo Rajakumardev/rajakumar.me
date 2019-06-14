@@ -6,6 +6,27 @@ import Main from './components/Main'
 import {Link} from 'react-router-dom'
 
 class App extends Component {
+
+  authenticate(){
+    return new Promise(resolve => setTimeout(resolve, 2000))
+  }
+
+  componentDidMount(){
+    this.authenticate().then(() => {
+      console.log("test cdidm");
+      const ele = document.getElementById('spinner_container')
+      if(ele){
+        // fade out
+        ele.classList.add('hide')
+        setTimeout(() => {
+          // remove from DOM
+          ele.outerHTML = ''
+          console.log("ele");
+        }, 2000)
+      }
+    })
+  }
+
   render() {
     return (
       <div className="App">

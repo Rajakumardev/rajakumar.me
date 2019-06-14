@@ -9,7 +9,7 @@ class ResumePage extends Component {
     }
     render() {
         return (
-            <Grid class="resumePage-grid">
+            <Grid className="resumePage-grid">
                 <Cell col={4} phone={12}  style={{margin:'50px auto'}}>
                     <Card  style={{width:'100%'}}>
                         <CardTitle shadow={3} style={{color:'#fff',height:'176px',background: 'url('+resumecov+') center / cover'}}>Download Resume</CardTitle>
@@ -20,7 +20,7 @@ class ResumePage extends Component {
                             <center>
                                 <h2>
                                     <a href="https://drive.google.com/open?id=1tI_RPAvyarheTNn5KHGAjjgLwtcJz-dT" target="_blank">
-                                        <i class="fas blue fa-file-download"></i>
+                                        <i className="fas blue fa-file-download"></i>
                                     </a>
                                 </h2>
                             </center>
