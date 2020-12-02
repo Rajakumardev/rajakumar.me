@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Rajakumardev/rajakumar.me/issues"
   },
-  "homepage": "https://github.com/Rajakumardev/rajakumar.me#readme"
+  "homepage": "https://github.com/Rajakumardev/rajakumar.me#readme",
+  "dependencies": {
+    "gatsby": "^2.28.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
