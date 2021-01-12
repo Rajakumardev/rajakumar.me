@@ -1,0 +1,22 @@
+@import "../../sassUtils/_util.scss";
+
+.container {
+    min-height: 90vh;
+    background-image: linear-gradient(to bottom right, $primary 80%, #fff 50%);
+    display: flex;
+
+    .child {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .profcard {
+            background: #fff;
+            width: 600px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

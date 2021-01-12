@@ -1,6 +1,11 @@
 module.exports = {
   plugins: [
-    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        implementation: require('sass')
+      }
+    },
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -11,7 +16,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
-    "gatsby-plugin-manifest",
+    // "gatsby-plugin-manifest",
     "gatsby-transformer-remark",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
