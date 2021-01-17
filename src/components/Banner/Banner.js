@@ -26,7 +26,7 @@ function Banner() {
             </div>
             <div className="banner__child">
                 <div className="card banner__mainCard" >
-                    <h3>📬 Get updates in you inbox.</h3>
+                    <h3>📬 Get updates in your inbox.</h3>
                     <ConvertKitForm {...config} />
                 </div>
             </div>
