@@ -1,4 +1,8 @@
 module.exports = {
+  siteMetadata: {
+    title: `./rajakumar.me`,
+    description: ""
+  },
   plugins: [
     {
       resolve: "gatsby-plugin-sass",
@@ -11,6 +15,13 @@ module.exports = {
       options: {
         trackingId: "254865062",
       },
+    }, {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/
+        }
+      }
     },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",

@@ -1,0 +1,14 @@
+@import '../../sassUtils/util';
+
+.footer__container {
+    background-image: linear-gradient(to top right, $primary 80%, $white 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+    height: 10vh;
+
+    p {
+        color: $white;
+    }
+}

@@ -1,0 +1,22 @@
+@import "../../sassUtils/_util.scss";
+@import "../../sassUtils/mixins";
+
+
+.header__container {
+    display: flex;
+    height: 10vh;
+    background-color: $primary;
+    align-items: center;
+
+
+    .header__title {
+        font-weight: 400;
+        font-size: large;
+        color: $primary-text;
+        padding: 0rem 1rem;
+
+        @include media-up('lg') {
+            font-weight: 600;
+        }
+    }
+}
