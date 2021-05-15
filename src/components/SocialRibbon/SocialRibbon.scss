@@ -1,0 +1,17 @@
+@import "../../sassUtils/util";
+
+.socialribbon__container {
+    width: 100%;
+    padding: 0.1rem .5rem;
+    display: flex;
+    justify-content: center;
+
+    .icon {
+        fill: $white;
+    }
+
+    #twitter {
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+}

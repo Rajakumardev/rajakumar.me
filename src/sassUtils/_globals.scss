@@ -1,0 +1,17 @@
+@import "./util";
+@import "./mixins";
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to bottom right, #fff 80%, $primary 10%);
+}
+
+.block-link {
+    display: inline-block;
+}
+
+.shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
