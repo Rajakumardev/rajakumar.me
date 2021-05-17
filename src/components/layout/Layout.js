@@ -1,15 +1,18 @@
 import React, { Fragment } from 'react'
 import Header from '../Header/Header'
 import '../../sassUtils/_util.scss';
+import './Layout.scss';
+import Footer from '../Footer/Footer';
 
 function Layout(props) {
     return (
         <Fragment>
-            <div className="light">
+            <div className="light layout-container">
                 <Header />
-                <div>
+                <main className="main">
                     {props.children}
-                </div>
+                </main>
+                <Footer />
             </div>
         </Fragment>
     )
