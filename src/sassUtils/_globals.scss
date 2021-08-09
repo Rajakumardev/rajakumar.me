@@ -19,3 +19,18 @@
 a {
     text-decoration: none;
 }
+
+.btn {
+    color: $primary-d;
+    border:2px solid $primary-d;
+    padding:0.7rem;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover{
+        background-color:$primary-d;
+        color: $white;
+        transition: background-color 0.2s ease-in-out;
+    }
+}
