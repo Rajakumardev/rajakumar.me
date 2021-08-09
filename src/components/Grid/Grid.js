@@ -1,29 +1,23 @@
 import React from 'react'
+import BlogPost from '../Card/BlogPost';
 import './Grid.scss';
 
-const Grid = () => {
+const Grid = (props) => {
+    const Items = props.data || [];
+    console.log("grid data:", props);
     return (
         <div className="grid-container">
             {/* <h3>Grid</h3> */}
             <div className="grid-content">
-                <div className="grid-item">
-                    <h4>1</h4>
-                </div>
-                <div className="grid-item">
-                    <h4>2</h4>
-                </div>
-                <div className="grid-item">
-                    <h4>3</h4>
-                </div>
-                <div className="grid-item">
-                    <h4>4</h4>
-                </div>
-                <div className="grid-item">
-                    <h4>5</h4>
-                </div>
-                <div className="grid-item">
-                    <h4>6</h4>
-                </div>
+                {Items.map((item, index) => {
+                    return (
+                        <BlogPost
+                            title={item.node.frontmatter.title}
+                            date={item.node.frontmatter.date}
+                            link={item.node.fields.slug}
+                        />
+                    );
+                })}
             </div>
         </div>
     )

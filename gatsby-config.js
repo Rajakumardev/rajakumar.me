@@ -30,15 +30,32 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
     // "gatsby-plugin-manifest",
-    "gatsby-transformer-remark",
-    "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`,
+          },
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 720
+              // linkImagesToOriginal: false,
+            }
+          }
+        ]
+      }
+    },
+    "gatsby-plugin-mdx",
   {
     resolve: "gatsby-source-filesystem",
     options: {
       name: "images",
-      path: "./src/images/",
+      path: `${__dirname}/src/posts`,
     },
     __key: "images",
   },

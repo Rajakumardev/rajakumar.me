@@ -3,7 +3,9 @@ import Header from '../Header/Header'
 import '../../sassUtils/_util.scss';
 import './Layout.scss';
 import Footer from '../Footer/Footer';
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 
+deckDeckGoHighlightElement();
 function Layout(props) {
     return (
         <Fragment>
