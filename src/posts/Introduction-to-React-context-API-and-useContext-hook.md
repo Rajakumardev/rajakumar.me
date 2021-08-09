@@ -1,6 +1,7 @@
 ---
 title: "Introduction to React context API and useContext() hook."
 date: "8th Aug 2021"
+featuredImage: ./assets/images/react-context-rajakumar.jpg
 ---
 
 ![React Context Api](./assets/images/react-context-rajakumar.jpg)
