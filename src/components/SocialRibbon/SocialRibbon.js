@@ -6,7 +6,7 @@ function SocialRibbon() {
     return (
         <div className="socialribbon__container">
             <div className="socialribbon__item">
-                <a className="block-link" rel="noreferrer" target="_blank" href="https://twitter.com/srajakumar95" title="@srajakumar95"><Twitter /></a>
+                <a className="block-link" rel="noreferrer" target="_blank" href="https://twitter.com/rajakumar_dev" title="@rajakumar_dev"><Twitter /></a>
             </div>
         </div>
     )
