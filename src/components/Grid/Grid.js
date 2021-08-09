@@ -15,6 +15,7 @@ const Grid = (props) => {
                             title={item.node.frontmatter.title}
                             date={item.node.frontmatter.date}
                             link={item.node.fields.slug}
+                            featuredImage={item.node.frontmatter.featuredImage.childImageSharp.fluid}
                         />
                     );
                 })}
