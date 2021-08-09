@@ -20,6 +20,7 @@
     "@mdx-js/react": "^1.6.22",
     "convertkit-react": "^1.5.5",
     "gatsby": "^3.11.0",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-manifest": "^3.11.0",
