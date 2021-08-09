@@ -12,6 +12,7 @@ const Grid = (props) => {
                 {Items.map((item, index) => {
                     return (
                         <BlogPost
+                            key={`blog-grid-${index}`}
                             title={item.node.frontmatter.title}
                             date={item.node.frontmatter.date}
                             link={item.node.fields.slug}
