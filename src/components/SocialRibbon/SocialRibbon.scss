@@ -2,10 +2,15 @@
 
 .socialribbon__container {
     width: 100%;
-    padding: 0.1rem .5rem;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-
+    .socialribbon__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0.5rem 1rem;
+    }
     .icon {
         fill: $white;
     }

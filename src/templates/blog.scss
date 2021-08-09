@@ -1,0 +1,46 @@
+@import '../sassUtils/util';
+
+.post-container {
+    width: 80%;
+    margin:3rem auto;
+    
+    .post-title-container{
+        margin-bottom: 1rem;
+        border-bottom:1px solid $primary-l;
+        padding:1rem 0rem;
+        .title {
+            margin: 1rem 0rem;
+            color: $primary-d;
+        }
+        .date {
+            color: $info;
+        }
+    }
+    .post-content {
+        ul {
+            padding-left:1rem;
+        }
+        h2,h3,h4,h5,h6{
+            margin:1.2rem 0rem;
+            color: $primary;
+        }
+        p,li{
+            margin:1rem 0rem;
+            line-height:1.5rem;
+            color: $secondary-text;
+            font-size:1.2rem;
+        }
+        deckgo-highlight-code {
+            margin:2rem 0rem;
+        }
+        a {
+            color: $primary-d;
+            text-decoration: underline;
+        }
+        blockquote {
+            border-left: 0.5rem solid $primary-l;
+            padding:1rem 2rem;
+            font-weight: 500;
+        }
+    }
+}

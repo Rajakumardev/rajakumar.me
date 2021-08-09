@@ -8,10 +8,32 @@
     background-image: linear-gradient(to bottom right, #fff 80%, $primary 10%);
 }
 
-.block-link {
-    display: inline-block;
-}
 
 .shadow {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: $primary-d;
+    border:2px solid $primary-d;
+    padding:0.7rem;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    transition: background-color 0.2s ease-in-out;
+    &.btn-light {
+        color:$white;
+        border:2px solid $white;
+    }
+    .icon {
+        margin:0rem 0.5rem;
+    }
+    &:hover{
+        background-color:$primary-d;
+        color: $white;
+        transition: background-color 0.2s ease-in-out;
+    }
 }
