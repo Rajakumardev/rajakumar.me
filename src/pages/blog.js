@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-
 import Grid from '../components/Grid/Grid'
 import Layout from '../components/layout/Layout'
 
@@ -14,6 +13,13 @@ const Blog = () => {
               frontmatter {
                 title
                 date
+                featuredImage {
+                  childImageSharp {
+                    fluid(maxWidth: 700) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
               fields {
                 slug
