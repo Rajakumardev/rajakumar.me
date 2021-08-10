@@ -8,6 +8,7 @@ function index() {
         <Layout>
             <Helmet>
                 <html lang="en"/>
+                <meta name="google-site-verification" content="5txZwkAUwhgDgll3sWgdtziT1CMrXDejLOErZqCW65I" />
                 <title>rajakumar.me - developer writer</title>
                 <description>
                     Hi, 👋 i have been creating web apps and android apps since 2010, 
