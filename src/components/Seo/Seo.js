@@ -2,16 +2,17 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react'
 import { Helmet } from 'react-helmet';
 
-const Seo = ({ title, lang, description, meta }) => {
+const Seo = ({ title, lang, description, meta = [], canonicalUrl  }) => {
     const data = useStaticQuery(graphql`
         query {
             site {
                 siteMetadata {
-                author
-                description
-                keywords
-                siteUrl
-                title
+                    author
+                    description
+                    keywords
+                    siteUrl
+                    title
+                    google_site_verification
                 }
             }
         }
@@ -19,6 +20,7 @@ const Seo = ({ title, lang, description, meta }) => {
     const keywords = data.site.siteMetadata?.keywords;
     const metaDescription = description || data.site.siteMetadata?.description;
     const defaultTitle = data.site.siteMetadata?.title;
+    const googleSearchConsoleHash = data.site.siteMetadata?.google_site_verification;
     return (
         <Helmet
             htmlAttributes={{
@@ -63,9 +65,12 @@ const Seo = ({ title, lang, description, meta }) => {
                     name: `twitter:description`,
                     content: metaDescription,
                 },
-            ]}
+                {
+                    name: `google-site-verification`,
+                    content: googleSearchConsoleHash,
+                },
+            ].concat(meta)}
         >
-
         </Helmet>
     )
 }

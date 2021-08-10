@@ -6,7 +6,10 @@ import Seo from '../components/Seo/Seo';
 function index() {
     return (
         <Layout>
-            <Seo title="Home"/>
+            <Seo
+                title="Home"
+                canonicalUrl = "https://rajakumar.me/"
+            />
             <Banner />
         </Layout>
     )
