@@ -17,6 +17,18 @@
         }
     }
     .post-content {
+        code {
+            background:$black;
+            color:$white;
+            font-family: monospace;
+            font-size: 0.9rem;
+            padding:0.3rem 0.5rem;
+            border-radius: 0.2rem;
+        }
+        img {
+            margin-top:1rem;
+            margin-bottom:1rem;
+        }
         ul {
             padding-left:1rem;
         }
