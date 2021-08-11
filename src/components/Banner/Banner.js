@@ -8,7 +8,7 @@ function Banner() {
         formId: 1964561,
         template: 'clare',
         emailPlaceholder: 'Enter an email address',
-        submitText: 'Subcribe',
+        submitText: 'Subscribe',
     }
     return (
         <div className="banner__container">
