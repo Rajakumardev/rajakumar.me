@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `./rajakumar.me`,
-    description: "",
-    siteUrl: "https://rajakumar.me"
+    description: "Hi rajakumar here, i have been creating web apps and android apps since 2010. i created this blog to share my learning.",
+    author: "@rajakumar_dev",
+    keywords: "developer, javascript, sass, micro-sass, reactjs, portfolio, rajakumar, rajakumardev",
+    siteUrl: "https://rajakumar.me",
+    google_site_verification: "5txZwkAUwhgDgll3sWgdtziT1CMrXDejLOErZqCW65I"
   },
   plugins: [{
     resolve: `gatsby-plugin-gtag`,
@@ -26,6 +29,12 @@ module.exports = {
     }
   },
     "gatsby-plugin-image",
+    {
+      resolve: 'gatsby-plugin-react-helmet-canonical-urls',
+      options: {
+        siteUrl: 'https://rajakumar.me'
+      }
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
