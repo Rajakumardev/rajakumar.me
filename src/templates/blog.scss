@@ -15,6 +15,12 @@
         .date {
             color: $info;
         }
+        .readingTime {
+            font-size: 0.8rem;
+          color:$info;
+          margin:0.5rem 0rem;
+          text-align: right;
+        }
     }
     .post-content {
         code {
