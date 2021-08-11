@@ -49,11 +49,12 @@ module.exports = {
             resolve: `gatsby-remark-highlight-code`,
           },
           'gatsby-remark-relative-images',
+          'gatsby-remark-reading-time',
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 720
-              // linkImagesToOriginal: false,
+              maxWidth: 720,
+              linkImagesToOriginal: false,
             }
           }
         ]

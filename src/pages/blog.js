@@ -23,6 +23,9 @@ const Blog = () => {
               }
               fields {
                 slug
+                readingTime {
+                  text
+                }
               }
             }
           }

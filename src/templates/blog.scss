@@ -15,10 +15,30 @@
         .date {
             color: $info;
         }
+        .readingTime {
+            font-size: 0.8rem;
+          color:$info;
+          margin:0.5rem 0rem;
+          text-align: right;
+        }
     }
     .post-content {
+        code {
+            background:$black;
+            color:$white;
+            font-family: monospace;
+            font-size: 0.9rem;
+            padding:0.3rem 0.5rem;
+            border-radius: 0.2rem;
+        }
+        img {
+            margin-top:1rem;
+            margin-bottom:1rem;
+        }
         ul {
-            padding-left:1rem;
+            padding-left:2.5rem;
+            margin:1.5rem 0rem;
+
         }
         h2,h3,h4,h5,h6{
             margin:1.2rem 0rem;
@@ -26,7 +46,7 @@
         }
         p,li{
             margin:1rem 0rem;
-            line-height:1.5rem;
+            line-height:2rem;
             color: $secondary-text;
             font-size:1.2rem;
         }
