@@ -9,6 +9,11 @@ function index() {
             <Seo
                 title="Home"
                 canonicalUrl = "https://rajakumar.me/"
+                meta={[{
+                    name:"og:image",
+                    content: "../images/rajakumar.me_OG.png"
+                }
+                ]}
             />
             <Banner />
         </Layout>
