@@ -12,6 +12,7 @@ const BlogPost = (props) => {
                 <div className="details">
                     <h4 className="title">{props.title}</h4>
                     <p className="date">{props.date}</p>
+                    <p className="readingTime">🕒 {props.readingTime}</p>
                 </div>
             </Link>
     )

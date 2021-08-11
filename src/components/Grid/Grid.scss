@@ -28,6 +28,7 @@
         flex-basis: 30%;
         border-radius:0.5rem;
       }
+      /*todo move styles to BlogPost.scss*/ 
       .details {
         .title {
           margin:1rem 0;
@@ -37,6 +38,12 @@
         .date {
           font-size: 0.8rem;
           color:$info;
+        }
+        .readingTime {
+          font-size: 0.8rem;
+          color:$info;
+          margin:0.5rem 0rem;
+          text-align: right;
         }
 
       }
