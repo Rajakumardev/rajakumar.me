@@ -31,8 +31,13 @@ const Blog = (props) => {
                     <p className="date">{props.data.markdownRemark.frontmatter?.date}</p>
                     <p className="readingTime">🕒 {props.data.markdownRemark.fields?.readingTime?.text}</p>
                 </div>
-                <div className="post-content" dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} />
+                <div className="post-content" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
             </div>
+            <div className="post-footer-cta-container">
+                    <h2>If you like the content you can do one of these.</h2>
+                    <p>share with your friends/community.</p>
+                    <p>support me @ <a className="btn" href="https://www.buymeacoffee.com/rajakumar">Buy me a coffee</a></p>
+                </div>
         </Layout>
     )
 }
