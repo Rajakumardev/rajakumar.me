@@ -39,7 +39,7 @@ const Blog = (props) => {
             </div>
             <div className="post-footer-ctas-container">
                 <h2 className="title">Support Me</h2>
-                <a className="btn" target="_blank" href="https://www.buymeacoffee.com/rajakumar">Buy me a coffee</a>
+                <a className="btn" target="_blank" href="https://www.buymeacoffee.com/rajakumar">☕ BUY ME A COFFEE</a>
             </div>
         </Layout>
     )
