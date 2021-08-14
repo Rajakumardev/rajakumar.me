@@ -64,3 +64,20 @@
         }
     }
 }
+
+.post-footer-ctas-container {
+    
+    width: 80%;
+    margin:3rem auto;
+    padding:1rem 0rem;
+    border-radius: 0.4rem;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    .title {
+        color: $primary-d;
+    }
+    .btn {
+        margin-left:1rem;
+    }
+}

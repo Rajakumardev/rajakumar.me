@@ -33,11 +33,10 @@ const Blog = (props) => {
                 </div>
                 <div className="post-content" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
             </div>
-            <div className="post-footer-cta-container">
-                    <h2>If you like the content you can do one of these.</h2>
-                    <p>share with your friends/community.</p>
-                    <p>support me @ <a className="btn" href="https://www.buymeacoffee.com/rajakumar">Buy me a coffee</a></p>
-                </div>
+            <div className="post-footer-ctas-container">
+                <h2 className="title">Support Me</h2>
+                <a className="btn" target="_blank" href="https://www.buymeacoffee.com/rajakumar">Buy me a coffee</a>
+            </div>
         </Layout>
     )
 }
