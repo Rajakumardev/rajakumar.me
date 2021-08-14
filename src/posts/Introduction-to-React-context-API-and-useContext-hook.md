@@ -220,5 +220,3 @@ Working application at  [codesanbox](https://codesandbox.io/s/todocontextapi-w4m
 
 Found any bugs or you have any suggestions to improve my writing let me know via  [Twitter ](https://twitter.com/rajakumar_dev) or  [Instagram](https://www.instagram.com/rajakumar.me/).
 
-Support me at  [BuyMeACoffee](buymeacoffee.com/rajakumar) 
-
