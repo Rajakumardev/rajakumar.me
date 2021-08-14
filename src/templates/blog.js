@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react'
 import Layout from '../components/layout/Layout'
+import Seo from '../components/Seo/Seo';
 import './blog.scss';
 
 export const query = graphql`
@@ -25,6 +26,9 @@ query($slug: String!) {
 const Blog = (props) => {
     return (
         <Layout>
+            <Seo
+                title={props.data.markdownRemark.frontmatter?.title} 
+            />
             <div className="post-container">
                 <div className="post-title-container">
                     <h1 className="title">{props.data.markdownRemark.frontmatter?.title}</h1>
