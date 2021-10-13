@@ -1,66 +1,75 @@
-@import '../sassUtils/util';
+@import "../sassUtils/util";
+@import "../sassUtils/mixins";
+@import "../sassUtils/globals";
 
 .post-container {
-    width: 80%;
-    margin:3rem auto;
-    
-    .post-title-container{
-        margin-bottom: 1rem;
-        border-bottom:1px solid $primary-l;
-        padding:1rem 0rem;
-        .title {
-            margin: 1rem 0rem;
-            color: $primary-d;
-        }
-        .date {
-            color: $info;
-        }
-        .readingTime {
-            font-size: 0.8rem;
-          color:$info;
-          margin:0.5rem 0rem;
-          text-align: right;
-        }
+  width: 90%;
+  margin: 3rem auto;
+  text-align: justify;
+  @include media-up("lg") {
+    width: 50%;
+  }
+  .post-title-container {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $primary-l;
+    padding: 1rem 0rem;
+    .title {
+      margin: 1rem 0rem;
+      color: $primary-d;
     }
-    .post-content {
-        code {
-            background:$black;
-            color:$white;
-            font-family: monospace;
-            font-size: 0.9rem;
-            padding:0.3rem 0.5rem;
-            border-radius: 0.2rem;
-        }
-        img {
-            margin-top:1rem;
-            margin-bottom:1rem;
-        }
-        ul {
-            padding-left:2.5rem;
-            margin:1.5rem 0rem;
-
-        }
-        h2,h3,h4,h5,h6{
-            margin:1.2rem 0rem;
-            color: $primary;
-        }
-        p,li{
-            margin:1rem 0rem;
-            line-height:2rem;
-            color: $secondary-text;
-            font-size:1.2rem;
-        }
-        deckgo-highlight-code {
-            margin:2rem 0rem;
-        }
-        a {
-            color: $primary-d;
-            text-decoration: underline;
-        }
-        blockquote {
-            border-left: 0.5rem solid $primary-l;
-            padding:1rem 2rem;
-            font-weight: 500;
-        }
+    .date {
+      color: $info;
     }
+    .readingTime {
+      font-size: 0.8rem;
+      color: $info;
+      margin: 0.5rem 0rem;
+      text-align: right;
+    }
+  }
+  .post-content {
+    code {
+      background: $black;
+      color: $white;
+      font-family: monospace;
+      font-size: 0.9rem;
+      padding: 0.3rem 0.5rem;
+      border-radius: 0.2rem;
+    }
+    img {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 2.5rem;
+      margin: 1.5rem 0rem;
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 1.2rem 0rem;
+      color: $primary;
+    }
+    p,
+    li {
+      margin: 1rem 0rem;
+      line-height: 2rem;
+      color: $secondary-text;
+      font-size: 1.2rem;
+    }
+    deckgo-highlight-code {
+      margin: 2rem 0rem;
+    }
+    a {
+      color: $primary-d;
+      text-decoration: underline;
+    }
+    blockquote {
+      border-left: 0.5rem solid $primary-l;
+      padding: 1rem 2rem;
+      font-weight: 500;
+    }
+  }
 }
