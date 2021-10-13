@@ -61,6 +61,8 @@ Also, we have to monitor uptime and downtime of the backend, being a solo develo
 
 Firebase can replace most of the Backend repetitive logic like Authentication, storage, database, even  Machine learning, etc.
 
+>Learn more about 🔗 [Firebase](https://firebase.google.com/).
+
 ### Authentication
 
 Firebase authentication provides popular integrations like Facebook, Google, Github, Phone number, Apple id etc. setting up all these authentications will only take few minutes to setup.
