@@ -21,7 +21,7 @@ function Navbar() {
             <ul id='navMenu' className="nav__list">
                 <li className="nav__item"> <Link to="/">./home</Link></li>
                 <li className="nav__item"> <Link to="/blog">./blog</Link></li>
-                <li className="nav__item"> <Link to="/">./work (WIP)</Link></li>
+                <li className="nav__item"> <Link to="/projects">./projects (WIP)</Link></li>
             </ul>
         </div>
     )
