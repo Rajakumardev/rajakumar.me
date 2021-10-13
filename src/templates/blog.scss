@@ -55,10 +55,13 @@
     p,
     li {
       margin: 1rem 0rem;
-      line-height: 2rem;
       color: $secondary-text;
       font-size: 1.2rem;
     }
+    p {
+      line-height: 2rem;
+    }
+    
     deckgo-highlight-code {
       margin: 2rem 0rem;
     }
