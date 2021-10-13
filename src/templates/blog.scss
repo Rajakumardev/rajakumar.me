@@ -61,7 +61,7 @@
     p {
       line-height: 2rem;
     }
-    
+
     deckgo-highlight-code {
       margin: 2rem 0rem;
     }
@@ -74,28 +74,28 @@
       padding: 1rem 2rem;
       font-weight: 500;
     }
-}
+  }
 
-.post-footer-ctas-container {
-    
+  .post-footer-ctas-container {
     width: 80%;
-    margin:3rem auto;
-    padding:1rem 0rem;
+    margin: 3rem auto;
+    padding: 1rem 0rem;
     border-radius: 0.4rem;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    @include media-down('md') {
-        flex-direction: column;
-        *{
-            margin-bottom: 1rem;
-        }
+    @include media-down("md") {
+      flex-direction: column;
+      * {
+        margin-bottom: 1rem;
+      }
     }
     .title {
-        color: $primary-d;
+      color: $primary-d;
     }
     .btn {
-        margin-left:1rem;
-        font-size: 1rem;
+      margin-left: 1rem;
+      font-size: 1rem;
     }
+  }
 }
