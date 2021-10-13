@@ -1,6 +1,6 @@
 ---
 title: "Why you should checkout this lightning fast stack? Nextjs & Firebase."
-date: "12th Aug 2021"
+date: "13th Oct 2021"
 featuredImage: ./assets/images/Why-you-should-checkout-this-lightning-fast-stack-nextjs-firebase/cover.jpg
 ---
 
@@ -19,7 +19,7 @@ implementing such a stack will be a big task, As a solo developer/freelancer you
   - `React`
 - Back end
   - `Express + MongoDB / MySQL` (based on the project)
-These are all pretty solid technology there is nothing wrong with them. but... Let's see.
+These are all pretty solid technology but there are more optimal options, Let's see 👀.
 
 ## React 
 
@@ -65,7 +65,7 @@ Firebase can replace most of the Backend repetitive logic like Authentication, s
 
 Firebase authentication provides popular integrations like Facebook, Google, Github, Phone number, Apple id etc. setting up all these authentications will only take few minutes to setup.
 
-> All `Firebase` Auth providers
+> All Firebase Auth providers
 > ![Firebase auth providers](./assets/images/Why-you-should-checkout-this-lightning-fast-stack-nextjs-firebase/providers.png)
 
 ### Firebase Database
