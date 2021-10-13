@@ -27,7 +27,7 @@ const Blog = (props) => {
     return (
         <Layout>
             <Seo
-                title={props.data.markdownRemark.frontmatter?.title} 
+                title={props.data.markdownRemark.frontmatter?.title}
             />
             <div className="post-container">
                 <div className="post-title-container">
@@ -36,10 +36,10 @@ const Blog = (props) => {
                     <p className="readingTime">🕒 {props.data.markdownRemark.fields?.readingTime?.text}</p>
                 </div>
                 <div className="post-content" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
-            </div>
-            <div className="post-footer-ctas-container">
-                <h2 className="title">Support Me</h2>
-                <a className="btn" target="_blank" href="https://www.buymeacoffee.com/rajakumar">☕ BUY ME A COFFEE</a>
+                <div className="post-footer-ctas-container">
+                    <h2 className="title">Support</h2>
+                    <a className="btn" target="_blank" href="https://www.buymeacoffee.com/rajakumar">☕ BUY ME A COFFEE</a>
+                </div>
             </div>
         </Layout>
     )
