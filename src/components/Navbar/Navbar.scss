@@ -59,9 +59,9 @@
           border-radius: 4px;
         }
         &:hover, &.active {
-          background-color: $primary-d;
+          background-color: $white;
           a {
-            color: $white;
+            color: $primary-d;
           }
           transition: background-color 0.2s ease-in-out;
         }

@@ -25,7 +25,8 @@ function Navbar() {
             <ul id='navMenu' className="nav__list">
                 <li className={`nav__item ${isValidNav(path) && path === '/' ? 'active' :'' }`}> <Link to="/">./home</Link></li>
                 <li className={`nav__item ${isValidNav(path) && path === '/blog' ? 'active' :'' }`}> <Link to="/blog">./blog</Link></li>
-                <li className={`nav__item ${isValidNav(path) && path === '/projets' ? 'active' :'' }`}> <Link to="/projects">./projects (WIP)</Link></li>
+                {/* commented for release */}
+                {/* <li className={`nav__item ${isValidNav(path) && path === '/projets' ? 'active' :'' }`}> <Link to="/projects">./projects (WIP)</Link></li> */}
             </ul>
         </div>
     )
