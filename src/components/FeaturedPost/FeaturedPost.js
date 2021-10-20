@@ -40,7 +40,7 @@ const FeaturedPost = (props) => {
           <div className="link-title">
             {title}
             <span className="icon">
-              {"->"}
+              📄
             </span>
           </div>
         </Link>
