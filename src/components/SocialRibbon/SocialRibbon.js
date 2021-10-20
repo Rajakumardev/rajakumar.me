@@ -11,10 +11,6 @@ function SocialRibbon() {
                     href="https://twitter.com/rajakumar_dev"
                     title="@rajakumar_dev"><Twitter /></a>
             </div>
-            <div className="socialribbon__item">
-
-                <Link to='/blog'><div className="btn btn-light"><span className="icon">👉</span> Read Blog</div></Link>
-            </div>
         </div>
     )
 }

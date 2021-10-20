@@ -1,4 +1,4 @@
-@import "../../sassUtils/util";
+@import "../../sassUtils/base";
 
 .nav__container {
   width: 100%;
@@ -11,6 +11,9 @@
     height: 2.5rem;
     padding: 0.5rem;
     border-radius: 4px;
+    @include media-up("lg") {
+      display: none;
+    }
     .navbar__hamburger__item {
       background-color: $primary;
       width: 100%;
@@ -36,7 +39,6 @@
     .nav__item {
       padding: 1rem;
       border-radius: 4px;
-
       & > a {
         text-decoration: none;
         color: $primary-d;
@@ -45,10 +47,38 @@
         font-size: 1.1rem;
         font-weight: 400;
       }
+      @include media-up("lg") {
+        display: flex;
+        align-items: stretch;
+        padding: 0rem;
+        margin: 0rem 0.5rem;
+        a {
+          padding: 0.7rem;
+          color: $white;
+          display: block;
+          border-radius: 4px;
+        }
+        &:hover, &.active {
+          background-color: $white;
+          a {
+            color: $primary-d;
+          }
+          transition: background-color 0.2s ease-in-out;
+        }
+      }
     }
     &.open {
       display: block;
       transition: all 2s;
+    }
+    @include media-up("lg") {
+      display: flex;
+      justify-content: flex-end;
+      align-items: stretch;
+      width: auto;
+      top: 0.5rem;
+      background-color: transparent;
+      box-shadow: none;
     }
   }
 }

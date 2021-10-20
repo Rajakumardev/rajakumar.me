@@ -1,5 +1,4 @@
-@import "./util";
-@import "./mixins";
+@import "./base";
 
 .card {
     background: #fff;
@@ -27,6 +26,12 @@ a {
     &.btn-light {
         color:$white;
         border:2px solid $white;
+    }
+    &.btn-cta {
+        background-color:white;
+        color:$primary-d;
+        border:none;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     }
     .icon {
         margin:0rem 0.5rem;
