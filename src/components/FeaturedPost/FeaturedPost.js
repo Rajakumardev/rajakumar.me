@@ -7,7 +7,12 @@ const FeaturedPost = (props) => {
   const { title = '' } = props;
   const data = useStaticQuery(graphql`
     query {
-        allMarkdownRemark {
+        allMarkdownRemark(
+          sort: { 
+            fields: [frontmatter___date], order: DESC 
+            }
+            limit:3
+          ) {
           edges {
             node {
               frontmatter {
