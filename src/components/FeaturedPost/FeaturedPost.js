@@ -46,6 +46,9 @@ const FeaturedPost = (props) => {
         </Link>
       </div>
       <Grid data={postsEdge} />
+      <div className="section-footer">
+        <Link to='/blog'><div className="btn btn-secondary-cta">Explore all articles</div></Link>
+      </div>
     </Section>
   );
 }

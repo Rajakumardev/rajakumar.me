@@ -28,8 +28,14 @@ a {
         border:2px solid $white;
     }
     &.btn-cta {
-        background-color:white;
+        background-color:$white;
         color:$primary-d;
+        border:none;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    }
+    &.btn-secondary-cta {
+        background-color:$primary-d;
+        color:$white;
         border:none;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     }
