@@ -3,6 +3,9 @@
 
 .grid-container {
   padding: 1rem 4rem;
+  .grid-title {
+    color: $primary-d;
+  }
   .grid-content {
     display: flex;
     flex-wrap: wrap;
