@@ -1,6 +1,7 @@
 ---
 title: "Why you should checkout this lightning fast stack? Nextjs & Firebase."
-date: "13th Oct 2021"
+formatterDate: "13th Oct 2021"
+date: "2021-10-13"
 featuredImage: ./assets/images/Why-you-should-checkout-this-lightning-fast-stack-nextjs-firebase/cover.jpg
 ---
 
