@@ -17,7 +17,7 @@ function index() {
                 ]}
             />
             <Banner />
-            <FeaturedPost title="Featured Articles"/>
+            <FeaturedPost title="Recent Articles"/>
         </Layout>
     )
 }
