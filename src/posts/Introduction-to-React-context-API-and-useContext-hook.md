@@ -1,6 +1,6 @@
 ---
 title: "Introduction to React context API and useContext() hook."
-date: "8th Aug 2021"
+date: "2021-08-08"
 featuredImage: ./assets/images/react-context-rajakumar.jpg
 ---
 

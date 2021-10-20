@@ -1,7 +1,8 @@
 @import '../../sassUtils/util';
 
 .footer__container {
-    background-image: linear-gradient(to top right, $primary 80%, $white 30%);
+    // background-image: linear-gradient(to top right, $primary 80%, $white 30%);
+    background-color: $primary;
     display: flex;
     justify-content: center;
     align-items: center;
