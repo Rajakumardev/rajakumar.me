@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../components/Banner/Banner';
 import Layout from '../components/layout/Layout';
+import Section from '../components/Section/Section';
 import Seo from '../components/Seo/Seo';
 
 function index() {
@@ -16,6 +17,7 @@ function index() {
                 ]}
             />
             <Banner />
+            <Section title="Featured Articles"/>
         </Layout>
     )
 }
