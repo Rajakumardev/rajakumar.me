@@ -7,9 +7,6 @@ function SocialRibbon() {
     return (
         <div className="socialribbon__container">
             <div className="socialribbon__item">
-                Socials |
-            </div>
-            <div className="socialribbon__item">
                 <a rel="noreferrer" target="_blank"
                     href="https://twitter.com/rajakumar_dev"
                     title="@rajakumar_dev"><Twitter /></a>
