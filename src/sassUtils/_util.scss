@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 $background: rgba(255, 255, 255, 0);
@@ -17,3 +17,16 @@ $secondary-text: #325a50;
 $white: #ffffff;
 $black: #000000;
 $info: #4b756d;
+
+body {
+  --primary: #{$primary};
+  --background:#{$background};
+  --primary-l:#{$primary-l};
+  --primary-d:#{$primary-d};
+  --primary-text:#{$primary-text};
+  --secondary:#{$secondary};
+  --secondary-text:#{$secondary-text};
+  --white:#{$white};
+  --black:#{$black};
+  --info:#{$info};
+}

@@ -4,7 +4,7 @@
 
 .banner__container {
     min-height: 80vh;
-    background-image: linear-gradient(to bottom right, $primary 80%, $white 50%);
+    background-image: linear-gradient(to bottom right, var(--primary) 80%, $white 50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +56,7 @@
             align-items: center;
 
             h3 {
-                color: $primary-text;
+                color: var(--primary-text);
                 margin: 1rem 0rem;
             }
 
