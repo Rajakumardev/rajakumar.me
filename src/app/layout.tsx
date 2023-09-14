@@ -1,3 +1,4 @@
+import { Header } from '@/components';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Jost } from 'next/font/google';
@@ -17,7 +18,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`${jost.className} bg-white dark:bg-green-950`}>
+			<body className={`${jost.className} bg-white dark:bg-green-950 px-8`}>
+				<Header icon="😸" title="RK" />
 				{children}
 			</body>
 		</html>
