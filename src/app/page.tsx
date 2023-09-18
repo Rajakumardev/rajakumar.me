@@ -1,3 +1,4 @@
+import { Section } from '@/components';
 import Image from 'next/image';
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
 				{/* <img src="" alt="rajakumar.me"/> */}
 				<div className="border-dashed p-6 rounded-xl">
 					<p className="dark:text-white text-green-950 text-center sm:text-2xl md:text-5xl">
-						👋, I am Rajakumar a expirenced fullstack javascript developer!
+						👋, I am Rajakumar, an expirenced fullstack javascript developer!
 					</p>
 				</div>
 				<a
@@ -28,11 +29,11 @@ export default function Home() {
 					</svg>
 				</a>
 			</section>
-			<section className="m-24 w-full" id="content">
+			<Section className="m-24 w-full" id="content">
 				<h2 className="dark:text-white text-green-950 text-2xl md:text-3xl font-bold">
 					Featured
 				</h2>
-			</section>
+			</Section>
 		</main>
 	);
 }
