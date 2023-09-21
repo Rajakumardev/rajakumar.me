@@ -22,6 +22,7 @@ export default function RootLayout({
 				<Header icon="😸" title="RK">
 					<Navbar>
 						<NavbarItem text="Home" href="/" />
+						<NavbarItem text="Blog" href="/blog" />
 					</Navbar>
 				</Header>
 				{children}
