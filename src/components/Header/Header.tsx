@@ -16,7 +16,7 @@ export const Header = ({ title = '', icon = '', children = [] }: Props) => {
 				</p>
 				<h1 className="dark:text-white text-2xl">{title}</h1>
 			</div>
-			<div className="flex justify-end items-end">{children}</div>
+			<div className="flex justify-end items-center">{children}</div>
 		</div>
 	);
 };

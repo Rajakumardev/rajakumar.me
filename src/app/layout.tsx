@@ -1,4 +1,4 @@
-import { Header, Navbar } from '@/components';
+import { Header, Navbar, NavbarItem } from '@/components';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Jost } from 'next/font/google';
@@ -20,7 +20,9 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${jost.className} bg-white dark:bg-green-950 px-8`}>
 				<Header icon="😸" title="RK">
-					<Navbar></Navbar>
+					<Navbar>
+						<NavbarItem text="Home" href="/" />
+					</Navbar>
 				</Header>
 				{children}
 			</body>
