@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Home() {
 	return (
 		<main className="flex flex-col items-center w-full scroll-smooth">
-			<section className="w-full flex flex-col justify-center gap-10 h-screen items-center -m-20 relative">
+			<section className="w-full flex flex-col justify-center gap-10 h-screen items-center -m-20 relative -z-10">
 				{/* <img src="" alt="rajakumar.me"/> */}
 				<div className="border-dashed p-6 rounded-xl">
 					<p className="dark:text-white text-green-950 text-center sm:text-2xl md:text-5xl">
