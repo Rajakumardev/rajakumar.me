@@ -3,5 +3,5 @@ type Props = {
 	children: JSX.Element | JSX.Element[];
 };
 export const Navbar = ({ children = [] }) => {
-	return <nav>{children}</nav>;
+	return <nav className="flex gap-4">{children}</nav>;
 };
