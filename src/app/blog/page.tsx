@@ -1,4 +1,4 @@
-// import { PostCard } from '@/components';
+import { PostCard } from '@/components';
 import { allPosts } from 'contentlayer/generated';
 import { compareDesc } from 'date-fns';
 import React from 'react';
@@ -14,7 +14,7 @@ const page = () => {
 				All Posts({posts.length})
 			</h1>
 			{posts.map((post, idx) => (
-				// <PostCard key={idx} {...post} />
+				<PostCard key={idx} {...post} />
 			))}
 		</main>
 	);
