@@ -4,22 +4,25 @@ import Link from 'next/link';
 
 export const PostCard = (post: Post) => {
 	return (
-		<div className="mb-8">
-			<h2 className="mb-1 text-xl">
-				<Link
-					href={post.url}
-					className="text-blue-700 hover:text-blue-900 dark:text-blue-400"
-				>
-					{post.title}
-				</Link>
-			</h2>
-			<time dateTime={post.date} className="mb-2 block text-xs text-gray-600">
-				{format(parseISO(post.date), 'LLLL d, yyyy')}
-			</time>
-			<div
-				className="text-sm [&>*]:mb-3 [&>*:last-child]:mb-0"
-				dangerouslySetInnerHTML={{ __html: post.body.html }}
-			/>
-		</div>
+		<Link href={post.url} className="w-1/2">
+			<div className="mb-8 border-2 border-dashed rounded-md p-4 flex gap-4">
+				<img
+					src={post.featuredImage}
+					alt={post.title}
+					className="w-44 rounded-md"
+				/>
+				<div className="">
+					<h2 className="mb-1 text-3xl text-green-950 dark:text-white">
+						{post.title}
+					</h2>
+					<time
+						dateTime={post.date}
+						className="mb-2 block text-xs text-gray-300"
+					>
+						{format(parseISO(post.date), 'LLLL d, yyyy')}
+					</time>
+				</div>
+			</div>
+		</Link>
 	);
 };
