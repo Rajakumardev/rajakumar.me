@@ -1,10 +1,10 @@
 ---
 title: 'Introduction to React context API and useContext() hook.'
 date: '2021-08-08'
-featuredImage: ./assets/images/react-context-rajakumar.jpg
+featuredImage: https://res.cloudinary.com/duvd47099/image/upload/v1697642609/personal-site/zjc0lqm6qbx8mk3hrrxf.jpg
 ---
 
-![React Context Api](./assets/images/react-context-rajakumar.jpg)
+![React Context Api](https://res.cloudinary.com/duvd47099/image/upload/v1697642609/personal-site/zjc0lqm6qbx8mk3hrrxf.jpg)
 
 Elo Elo, Hope you guys doing great, this post introduces you to react's context API
 and `useContext()` hook. we will learn about how to use `React.CreateContext()` to create a store and access them using `useContext()` Hook.
