@@ -13,7 +13,7 @@ const page = () => {
 			<h1 className="my-8 text-2xl dark:text-white text-green-950 w-full">
 				All Posts({posts.length})
 			</h1>
-			<div className="w-full">
+			<div className="w-full flex gap-4">
 				{posts.map((post, idx) => (
 					<PostCard key={idx} {...post} />
 				))}
