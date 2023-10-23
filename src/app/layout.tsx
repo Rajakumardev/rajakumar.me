@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Jost } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
+import Script from 'next/script';
 
 const jost = Jost({ subsets: ['latin'] });
 
@@ -20,6 +21,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${jost.className} bg-green-950 px-8`}>
+				<Script
+					src="https://beamanalytics.b-cdn.net/beam.min.js"
+					data-token="aa98429f-269f-4583-a607-7dd11689711b"
+					async
+				/>
 				<NextTopLoader
 					color="#ffffff"
 					initialPosition={0.08}
