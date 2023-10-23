@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	];
 	const postSitemap = allPosts.map((post) => {
 		return {
-			url: post.url,
+			url: `${domain}${post.url}`,
 			lastModified: post.date,
 			priority: 1,
 		};
