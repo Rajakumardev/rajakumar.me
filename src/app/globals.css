@@ -1,0 +1,69 @@
+@tailwind base;
+html {
+	scroll-behavior: smooth;
+}
+@tailwind components;
+@tailwind utilities;
+
+.prose {
+	@apply w-full !important;
+	@apply max-w-full;
+}
+.blog p {
+	@apply text-white;
+}
+.blog p code,
+.blog li code {
+	@apply text-white;
+	@apply bg-black;
+	@apply px-2;
+	@apply py-1;
+	@apply rounded-md;
+}
+.blog code::after,
+.blog code::before {
+	content: '';
+}
+.blog h1,
+.blog h2,
+.blog h3 {
+	@apply text-white !important;
+	@apply mt-10 !important;
+}
+.blog li {
+	@apply text-white;
+	@apply list-disc;
+}
+.blog a {
+	@apply text-white;
+	@apply underline;
+	@apply text-white;
+}
+.blog img {
+	@apply object-cover;
+	@apply w-full;
+	@apply rounded-lg;
+	@apply shadow-2xl;
+}
+.blog blockquote {
+	@apply border-white;
+	@apply border-2;
+	@apply rounded-md;
+	@apply pl-10;
+	@apply pr-4;
+	@apply bg-green-950;
+	@apply relative;
+	@apply shadow-md;
+	@apply min-h-[8rem];
+}
+.blog blockquote::before {
+	content: url('https://res.cloudinary.com/duvd47099/image/upload/v1676182235/keepcode.dev/gifs/4x_fbmnld.webp');
+	@apply absolute;
+	@apply -bottom-[0.9rem];
+	@apply left-0;
+	@apply opacity-25;
+}
+
+.text-shadow {
+	text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.8);
+}
