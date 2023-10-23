@@ -8,7 +8,7 @@ type Props = {
 
 export const Header = ({ title = '', icon = '', children = [] }: Props) => {
 	return (
-		<div className="h-20 flex justify-between">
+		<div className="h-20 flex flex-col md:flex-row justify-between">
 			<Link href={'/'} className="flex items-center w-28">
 				<p
 					className=" text-2xl border-white border-4 rounded-full
@@ -18,7 +18,9 @@ export const Header = ({ title = '', icon = '', children = [] }: Props) => {
 				</p>
 				<h1 className="text-white text-2xl">{title}</h1>
 			</Link>
-			<div className="flex justify-end items-center">{children}</div>
+			<div className="flex justify-start mt-10 md:mt-0 md:justify-end items-center">
+				{children}
+			</div>
 		</div>
 	);
 };
