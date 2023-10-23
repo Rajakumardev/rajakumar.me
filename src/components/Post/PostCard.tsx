@@ -13,7 +13,7 @@ export const PostCard = (post: Post) => {
 					className=" w-full lg:w-1/4 lg:h-full h-1/4 rounded-md object-cover"
 				/>
 				<div className="">
-					<h2 className="mb-1 text-2xl lg:text-3xl text-green-950 dark:text-white">
+					<h2 className="mb-1 text-2xl lg:text-3xl text-white">
 						{textLimitter(post.title, 50)}
 					</h2>
 					<time

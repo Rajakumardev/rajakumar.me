@@ -13,17 +13,17 @@ export default function Home() {
 			<section className="w-full flex flex-col justify-center gap-10 h-[calc(100vh-theme('spacing.20'))] items-center relative">
 				{/* <img src="" alt="rajakumar.me"/> */}
 				<div className="border-dashed p-6 rounded-xl">
-					<p className="dark:text-white text-green-950 text-center sm:text-2xl md:text-5xl">
+					<p className="text-white text-center sm:text-2xl md:text-5xl">
 						👋, I am Rajakumar, an expirenced fullstack javascript developer!
 					</p>
 				</div>
 				<a
 					href="#content"
-					className="border-2 animate-bounce dark:border-white border-green-950 border-dotted rounded-full p-4 text-2xl absolute bottom-0"
+					className="border-2 animate-bounce border-white border-dotted rounded-full p-4 text-2xl absolute bottom-0"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						className="h-10 w-10  dark:fill-white fill-green-950"
+						className="h-10 w-10  fill-white "
 						viewBox="0 0 20 20"
 						fill="currentColor"
 					>
@@ -38,7 +38,7 @@ export default function Home() {
 			<Section className="m-24 w-full flex flex-col gap-16" id="content">
 				<div className="text-center relative w-3/4 m-auto">
 					<hr className="border-1 border-dashed" />
-					<h2 className="dark:text-white text-green-950 dark:bg-green-950 bg-white text-2xl md:text-3xl font-bold absolute -top-8 left-[43%] p-4">
+					<h2 className="text-white bg-green-950 text-2xl md:text-3xl font-bold absolute -top-8 left-[43%] p-4">
 						Featured
 					</h2>
 				</div>

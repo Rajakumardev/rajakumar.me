@@ -10,7 +10,7 @@ const page = () => {
 
 	return (
 		<main className="flex flex-col items-center w-full scroll-smooth">
-			<h1 className="my-8 text-2xl dark:text-white text-green-950 w-full">
+			<h1 className="my-8 text-2xl text-white w-full">
 				All Posts({posts.length})
 			</h1>
 			<div className="w-full flex gap-4">

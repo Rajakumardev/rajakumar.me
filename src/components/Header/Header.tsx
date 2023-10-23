@@ -11,12 +11,12 @@ export const Header = ({ title = '', icon = '', children = [] }: Props) => {
 		<div className="h-20 flex justify-between">
 			<Link href={'/'} className="flex items-center w-28">
 				<p
-					className=" text-2xl dark:border-white border-green-950 border-4 rounded-full
+					className=" text-2xl border-white border-4 rounded-full
             mr-4 p-1 border-dotted"
 				>
 					{icon}
 				</p>
-				<h1 className="dark:text-white text-2xl">{title}</h1>
+				<h1 className="text-white text-2xl">{title}</h1>
 			</Link>
 			<div className="flex justify-end items-center">{children}</div>
 		</div>

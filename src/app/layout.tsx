@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`${jost.className} bg-white dark:bg-green-950 px-8`}>
+			<body className={`${jost.className} bg-green-950 px-8`}>
 				<NextTopLoader
 					color="#ffffff"
 					initialPosition={0.08}
