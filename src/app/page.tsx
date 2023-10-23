@@ -13,7 +13,7 @@ export default function Home() {
 			<section className="w-full flex flex-col justify-center gap-10 h-[calc(100vh-theme('spacing.20'))] items-center relative">
 				{/* <img src="" alt="rajakumar.me"/> */}
 				<div className="border-dashed p-6 rounded-xl">
-					<p className="text-white text-center sm:text-2xl md:text-5xl">
+					<p className="text-white text-center text-2xl md:text-5xl">
 						👋, I am Rajakumar, an expirenced fullstack javascript developer!
 					</p>
 				</div>
