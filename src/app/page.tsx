@@ -42,7 +42,7 @@ export default function Home() {
 						Featured
 					</h2>
 				</div>
-				<div className="w-full flex gap-4">
+				<div className="w-full flex flex-col md:flex-row gap-4">
 					{posts.map((post, idx) => (
 						<PostCard key={idx} {...post} />
 					))}
