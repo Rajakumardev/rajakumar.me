@@ -41,7 +41,11 @@ export default function RootLayout({
 					<Navbar>
 						<NavbarItem text="Home" href="/" />
 						<NavbarItem text="Blog" href="/blog" />
-						<NavbarItem text="Github" href="https://github.com/Rajakumardev" />
+						<NavbarItem
+							text="Github"
+							target="_blank"
+							href="https://github.com/Rajakumardev"
+						/>
 					</Navbar>
 				</Header>
 				{children}
