@@ -1,4 +1,4 @@
-import { Header, Navbar, NavbarItem } from '@/components';
+import { Footer, Header, Navbar, NavbarItem } from '@/components';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Jost } from 'next/font/google';
@@ -38,6 +38,7 @@ export default function RootLayout({
 					</Navbar>
 				</Header>
 				{children}
+				<Footer title="Made with 💚 by rajakumar"></Footer>
 			</body>
 		</html>
 	);
