@@ -30,9 +30,12 @@ export default function Home() {
 				</a>
 			</section>
 			<Section className="m-24 w-full" id="content">
-				<h2 className="dark:text-white text-green-950 text-2xl md:text-3xl font-bold">
-					Featured
-				</h2>
+				<div className="text-center relative w-3/4 m-auto">
+					<hr className="border-1 border-dashed" />
+					<h2 className="dark:text-white text-green-950 dark:bg-green-950 bg-white text-2xl md:text-3xl font-bold absolute -top-8 left-[43%] p-4">
+						Featured
+					</h2>
+				</div>
 			</Section>
 		</main>
 	);
