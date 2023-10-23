@@ -1,7 +1,13 @@
 'use client';
-import { Section } from '@/components';
+import { PostCard, Section } from '@/components';
+import { allPosts } from 'contentlayer/generated';
+import { compareDesc } from 'date-fns';
 
 export default function Home() {
+	const posts = allPosts
+		.slice((allPosts.length - 2) * -1, allPosts.length)
+		.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
+
 	return (
 		<main className="flex flex-col items-center w-full scroll-smooth">
 			<section className="w-full flex flex-col justify-center gap-10 h-[calc(100vh-theme('spacing.20'))] items-center relative">
@@ -29,12 +35,17 @@ export default function Home() {
 					</svg>
 				</a>
 			</section>
-			<Section className="m-24 w-full" id="content">
+			<Section className="m-24 w-full flex flex-col gap-16" id="content">
 				<div className="text-center relative w-3/4 m-auto">
 					<hr className="border-1 border-dashed" />
 					<h2 className="dark:text-white text-green-950 dark:bg-green-950 bg-white text-2xl md:text-3xl font-bold absolute -top-8 left-[43%] p-4">
 						Featured
 					</h2>
+				</div>
+				<div className="w-full flex gap-4">
+					{posts.map((post, idx) => (
+						<PostCard key={idx} {...post} />
+					))}
 				</div>
 			</Section>
 		</main>
