@@ -36,11 +36,13 @@ export default function Home() {
 				</a>
 			</section>
 			<Section className="m-24 w-full flex flex-col gap-16" id="content">
-				<div className="text-center relative w-3/4 m-auto">
+				<div className="text-center relative w-full md:w-3/4 m-auto">
 					<hr className="border-1 border-dashed" />
-					<h2 className="text-white bg-green-950 text-2xl md:text-3xl font-bold absolute -top-8 left-[43%] p-4">
-						Featured
-					</h2>
+					<div className='absolute -top-8 flex justify-center items-center w-full'>
+						<h2 className="text-white bg-green-950 text-2xl md:text-3xl font-bold  p-4">
+							Featured
+						</h2>
+					</div>
 				</div>
 				<div className="w-full flex flex-col md:flex-row gap-4">
 					{posts.map((post, idx) => (
