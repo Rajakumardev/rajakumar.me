@@ -2,6 +2,7 @@
 title: 'Introduction to React context API and useContext() hook.'
 date: '2021-08-08'
 featuredImage: https://res.cloudinary.com/duvd47099/image/upload/v1697642609/personal-site/zjc0lqm6qbx8mk3hrrxf.jpg
+metaDescription: "test"
 ---
 
 ![React Context Api](https://res.cloudinary.com/duvd47099/image/upload/v1697642609/personal-site/zjc0lqm6qbx8mk3hrrxf.jpg)
