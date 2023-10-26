@@ -1,12 +1,9 @@
 'use client';
 import { PostCard, Section } from '@/components';
 import { allPosts } from 'contentlayer/generated';
-import { compareDesc } from 'date-fns';
 
 export default function Home() {
-	const posts = allPosts
-		.slice((allPosts.length - 2) * -1, allPosts.length)
-		.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
+	const posts = allPosts.slice(allPosts.length - 3, allPosts.length - 1);
 
 	return (
 		<main className="flex flex-col items-center w-full scroll-smooth">
@@ -38,7 +35,7 @@ export default function Home() {
 			<Section className="m-24 w-full flex flex-col gap-16" id="content">
 				<div className="text-center relative w-full md:w-3/4 m-auto">
 					<hr className="border-1 border-dashed" />
-					<div className='absolute -top-8 flex justify-center items-center w-full'>
+					<div className="absolute -top-8 flex justify-center items-center w-full">
 						<h2 className="text-white bg-green-950 text-2xl md:text-3xl font-bold  p-4">
 							Featured
 						</h2>
