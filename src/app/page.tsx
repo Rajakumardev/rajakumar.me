@@ -1,7 +1,6 @@
 'use client';
 import { PostCard, Section } from '@/components';
 import { allPosts } from 'contentlayer/generated';
-import { compareDesc } from 'date-fns';
 
 export default function Home() {
 	const posts = allPosts.slice(allPosts.length - 3, allPosts.length - 1);
