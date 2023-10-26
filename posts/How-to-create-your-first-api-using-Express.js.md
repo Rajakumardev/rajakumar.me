@@ -2,6 +2,7 @@
 title: "How to create your first API using Express.js?"
 date: "2023-10-09"
 featuredImage: https://res.cloudinary.com/duvd47099/image/upload/v1698287636/personal-site/xfq1l7gqddh1jzxlukru.jpg
+metaDescription: "Learn about the basics of creating Backends and APIs in node with Express.js with examples."
 ---
 
 ![How to create your first API using Express.js? - Rajakumar](https://res.cloudinary.com/duvd47099/image/upload/v1698287636/personal-site/xfq1l7gqddh1jzxlukru.jpg)
