@@ -4,7 +4,7 @@ import { allPosts } from 'contentlayer/generated';
 import { textLimitter } from '@/utils';
 
 export const generateStaticParams = async () =>
-	allPosts.map((post) => ({ slug: post._raw.flattenedPath }));
+	allPosts.map((post) => ({ slug: post._raw.flattenedPath.toLowerCase() }));
 
 export const generateMetadata = ({ params }: { params: { slug: string } }) => {
 	const post = allPosts.find(
@@ -20,7 +20,9 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
 };
 
 const PostLayout = ({ params }: { params: { slug: string } }) => {
-	const post = allPosts.find((post) => post._raw.flattenedPath.toLowerCase() === params.slug);
+	const post = allPosts.find(
+		(post) => post._raw.flattenedPath.toLowerCase() === params.slug
+	);
 	if (!post) throw new Error(`Post not found for slug: ${params.slug}`);
 
 	return (
