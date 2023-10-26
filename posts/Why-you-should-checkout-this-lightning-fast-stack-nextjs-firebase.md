@@ -2,7 +2,7 @@
 title: 'Why you should checkout this lightning fast stack? Nextjs & Firebase.'
 date: '2021-10-13'
 featuredImage: https://res.cloudinary.com/duvd47099/image/upload/v1697643638/personal-site/y0dthbs9wvjnwpxswr58.jpg
-metaDescription: "Test"
+metaDescription: 'Creating full stack web applications using nextjs and firebase. '
 ---
 
 ![Nextjs + Firebase lightning fast stack](https://res.cloudinary.com/duvd47099/image/upload/v1697643638/personal-site/y0dthbs9wvjnwpxswr58.jpg)
