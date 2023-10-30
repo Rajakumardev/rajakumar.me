@@ -1,17 +1,32 @@
 'use client';
 import { PostCard, Section } from '@/components';
 import { allPosts } from 'contentlayer/generated';
+import { compareDesc } from 'date-fns';
 
 export default function Home() {
-	const posts = allPosts.slice(allPosts.length - 3, allPosts.length - 1);
+	const posts = allPosts
+		.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+		.slice(0, 2);
 
 	return (
 		<main className="flex flex-col items-center w-full scroll-smooth">
-			<section className="w-full flex flex-col justify-center gap-10 h-[calc(100vh-theme('spacing.20'))] items-center relative">
+			<section
+				className="w-full flex flex-col justify-center gap-10 
+			h-[calc(100vh-theme('spacing.20'))] items-center relative"
+			>
 				{/* <img src="" alt="rajakumar.me"/> */}
-				<div className="border-dashed p-6 rounded-xl">
-					<p className="text-white text-center text-2xl md:text-5xl">
-						👋, I am Rajakumar, an expirenced fullstack javascript developer!
+				<div
+					className="border-dashed md:p-6 rounded-xl flex flex-col 
+				md:flex-row gap-2 justify-center"
+				>
+					<p className="text-white text-center text-1xl md:text-3xl xl:text-5xl flex-nowrap">
+						👋, I am Rajakumar,{' '}
+					</p>
+					<p
+						className="bg-white text-green-950
+						rounded-md px-4 py-2 font-semibold text-1xl md:text-3xl xl:text-5xl"
+					>
+						Fullstack javascript dev.
 					</p>
 				</div>
 				<a
