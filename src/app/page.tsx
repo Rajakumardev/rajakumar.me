@@ -1,9 +1,12 @@
 'use client';
 import { PostCard, Section } from '@/components';
 import { allPosts } from 'contentlayer/generated';
+import { compareDesc } from 'date-fns';
 
 export default function Home() {
-	const posts = allPosts.slice(allPosts.length - 3, allPosts.length - 1);
+	const posts = allPosts
+		.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+		.slice(0, 2);
 
 	return (
 		<main className="flex flex-col items-center w-full scroll-smooth">
