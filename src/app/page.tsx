@@ -17,7 +17,7 @@ export default function Home() {
 						👋, I am Rajakumar,{' '}
 						<span
 							className="bg-white text-green-950 border-2 border-dashed 
-						rounded-md px-4 font-semibold shadow-2xl"
+						rounded-md px-4 font-semibold"
 						>
 							Fullstack javascript dev.
 						</span>
