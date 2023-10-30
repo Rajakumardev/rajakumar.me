@@ -12,15 +12,15 @@ export default function Home() {
 		<main className="flex flex-col items-center w-full scroll-smooth">
 			<section className="w-full flex flex-col justify-center gap-10 h-[calc(100vh-theme('spacing.20'))] items-center relative">
 				{/* <img src="" alt="rajakumar.me"/> */}
-				<div className="border-dashed p-6 rounded-xl">
-					<p className="text-white text-center text-2xl md:text-5xl">
+				<div className="border-dashed md:p-6 rounded-xl">
+					<p className="text-white text-center text-1xl md:text-5xl flex-nowrap">
 						👋, I am Rajakumar,{' '}
-						<span
+						<p
 							className="bg-white text-green-950 border-2 border-dashed 
-						rounded-md px-4 font-semibold"
+						rounded-md px-4 py-2 font-semibold mt-5"
 						>
 							Fullstack javascript dev.
-						</span>
+						</p>
 					</p>
 				</div>
 				<a
