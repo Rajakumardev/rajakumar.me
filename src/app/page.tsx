@@ -14,7 +14,13 @@ export default function Home() {
 				{/* <img src="" alt="rajakumar.me"/> */}
 				<div className="border-dashed p-6 rounded-xl">
 					<p className="text-white text-center text-2xl md:text-5xl">
-						👋, I am Rajakumar, an expirenced fullstack javascript developer!
+						👋, I am Rajakumar,{' '}
+						<span
+							className="bg-white text-green-950 border-2 border-dashed 
+						rounded-md px-4 font-semibold shadow-2xl"
+						>
+							Fullstack javascript dev.
+						</span>
 					</p>
 				</div>
 				<a
