@@ -68,9 +68,6 @@ Firebase can replace most of the Backend repetitive logic like Authentication, s
 
 Firebase authentication provides popular integrations like Facebook, Google, Github, Phone number, Apple id etc. setting up all these authentications will only take few minutes to setup.
 
-> All Firebase Auth providers
-> ![Firebase auth providers](./assets/images/Why-you-should-checkout-this-lightning-fast-stack-nextjs-firebase/providers.png)
-
 ### Firebase Database
 
 `Firebase` database is a powerful document based data store with all kinds of query support. combine this with frontend libraries like `SWR` or `React Query` it becomes unstoppable.
