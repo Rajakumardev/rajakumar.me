@@ -19,7 +19,7 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
 		title: post.title,
 		description: textLimitter(post.metaDescription, 160),
 		alternates: {
-			canonical: `${domain}/${post.url}`,
+			canonical: `${domain}${post.url}`,
 		},
 	};
 };
