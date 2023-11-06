@@ -8,7 +8,7 @@ import Script from 'next/script';
 const jost = Jost({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: '👋 Rajakumar',
+	title: '👋 Rajakumar - Full stack javascript developler.',
 	description:
 		'Hi rajakumar here, i have been creating web apps and android apps since 2010. i created this blog to share my learning.',
 };

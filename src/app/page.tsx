@@ -1,7 +1,17 @@
-'use client';
+// 'use client';
 import { PostCard, Section } from '@/components';
 import { allPosts } from 'contentlayer/generated';
 import { compareDesc } from 'date-fns';
+
+const domain = 'https://rajakumar.me';
+
+export const generateMetadata = ({ params }: { params: { slug: string } }) => {
+	return {
+		alternates: {
+			canonical: `${domain}`,
+		},
+	};
+};
 
 export default function Home() {
 	const posts = allPosts
@@ -26,7 +36,7 @@ export default function Home() {
 						className="bg-white text-green-950
 						rounded-md px-4 py-2 font-semibold text-1xl md:text-3xl xl:text-5xl"
 					>
-						Fullstack javascript dev.
+						Fullstack dev.
 					</p>
 				</div>
 				<a

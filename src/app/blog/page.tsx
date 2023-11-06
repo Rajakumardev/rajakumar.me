@@ -2,6 +2,15 @@ import { PostCard } from '@/components';
 import { allPosts } from 'contentlayer/generated';
 import { compareDesc } from 'date-fns';
 import React from 'react';
+const domain = 'https://rajakumar.me';
+
+export const generateMetadata = ({ params }: { params: { slug: string } }) => {
+	return {
+		alternates: {
+			canonical: `${domain}/blog`,
+		},
+	};
+};
 
 const page = () => {
 	const posts = allPosts.sort((a, b) =>
