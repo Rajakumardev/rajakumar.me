@@ -3,6 +3,8 @@ import { format, parseISO } from 'date-fns';
 import { allPosts } from 'contentlayer/generated';
 import { textLimitter } from '@/utils';
 
+const domain = 'https://rajakumar.me';
+
 export const generateStaticParams = async () =>
 	allPosts.map((post) => ({ slug: post._raw.flattenedPath.toLowerCase() }));
 
@@ -16,6 +18,9 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
 	return {
 		title: post.title,
 		description: textLimitter(post.metaDescription, 160),
+		alternates: {
+			canonical: `${domain}/${post.url}`,
+		},
 	};
 };
 
