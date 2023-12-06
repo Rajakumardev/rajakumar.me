@@ -36,7 +36,7 @@ export default function Home() {
 						className="bg-white text-green-950
 						rounded-md px-4 py-2 font-semibold text-1xl md:text-3xl xl:text-5xl"
 					>
-						Fullstack dev.
+						Fullstack Javascript dev.
 					</p>
 				</div>
 				<a
