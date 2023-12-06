@@ -11,6 +11,9 @@ export const metadata: Metadata = {
 	title: '👋 Rajakumar - Full stack javascript developler.',
 	description:
 		'Hi rajakumar here, i have been creating web apps and android apps since 2010. i created this blog to share my learning.',
+	other: {
+		'google-site-verification': '5txZwkAUwhgDgll3sWgdtziT1CMrXDejLOErZqCW65I',
+	},
 };
 
 export default function RootLayout({
