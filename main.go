@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	router := echo.New()
-	log.Fatal(router.Start(":3000"))
+	app := echo.New()
+	log.Fatal(app.Start(":3000"))
 }
