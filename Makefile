@@ -1,2 +1,2 @@
 tg:
-	/home/rajakumar/go/bin/templ generate
+	/home/rajakumar/go/bin/templ generate --watch
