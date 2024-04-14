@@ -1,2 +1,2 @@
-templ_gen:
+tg:
 	/home/rajakumar/go/bin/templ generate
