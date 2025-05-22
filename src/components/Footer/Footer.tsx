@@ -24,6 +24,13 @@ export const Footer = ({ title = '' }: Props) => {
 				>
 					Pen and Poetry Blog
 				</a>
+				<a
+					href="https://flesch-kincaid-calculator.com/"
+					target="_blank"
+					className="text-white underline"
+				>
+					Flesch Kincaid Calculator
+				</a>
 			</div>
 		</div>
 	);
