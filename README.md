@@ -1,34 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rajakumar Blog
 
-## Getting Started
+Laravel 13 markdown blog with daisyUI redesign, neon purple visual theme, and SEO-first architecture.
 
-First, run the development server:
+## Stack
+
+- PHP 8.3+
+- Laravel 13
+- Tailwind CSS v4
+- daisyUI v5
+- League CommonMark for markdown rendering
+- Spatie YAML front matter parser
+
+## Content Source
+
+- Markdown posts live in `content/posts/*.md`
+- Front matter fields required by the blog engine:
+  - `title`
+  - `date` (`YYYY-MM-DD`)
+  - `featuredImage`
+  - `metaDescription`
+
+## Routes
+
+- `/` home page with featured posts
+- `/blog` all posts
+- `/posts/{slug}` individual post pages
+- `/sitemap.xml` dynamic sitemap
+- `/robots.txt` crawl directives and sitemap link
+
+## SEO Features
+
+- Canonical tags on all pages
+- Open Graph and Twitter Card metadata
+- JSON-LD schema:
+  - `WebSite`
+  - `Person`
+  - `Blog`
+  - `BlogPosting`
+  - `BreadcrumbList`
+- XML sitemap with post URLs
+- Robots directives with sitemap reference
+
+## Security Features
+
+- Strict security headers middleware:
+  - Content Security Policy
+  - X-Frame-Options
+  - X-Content-Type-Options
+  - Referrer-Policy
+  - Permissions-Policy
+  - HSTS when HTTPS
+- Markdown raw HTML stripping to reduce XSS risk
+
+## Local Development
 
 ```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+php artisan serve
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Production Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm run build
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+```
